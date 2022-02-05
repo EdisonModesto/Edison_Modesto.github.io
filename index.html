@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <div class="logo">
+                <font class="logoLbl">Portfolio</font>
+                <img src="img/logo.png" alt="" srcset="">
+            </div>
+            <div class="burger" onclick="openNav()">
+                III
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="myPicDiv"  data-aos="zoom-in" data-aos-duration="1000">
+               <img src="img/MyPicture.png" alt="" srcset="" class="myPic">
+            </div>
+            <div class="txtContainer" data-aos="fade-up" data-aos-duration="1000">
+                <p class="mainLbl">Hi! I'm <font color="2EBBCE">Edison</font> Modesto</p>
+                <p class="mainSlbl">Web Developer | Software Developer | Android Developer</p>
+            
+                    <button class="homeBtn" onclick="window.location.href='#about';">Get to know me</button>                
+
+            </div>
+
+        </main>
+        <div class="wave">
+            <img src="img/wave.png" alt="" srcset="">
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#services" onclick="closeNav()">Services</a>
+            <a href="#works" onclick="closeNav()">Works</a>
+            <a href="#contacts" onclick="closeNav()">Contact</a>
+          </div>
+          
+    </section>
+    <section id="about">
+        <div class="aboutDiv">
+            <p class="mainLbl">About Me</p>
+            <p class="subLbl" data-aos="fade">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="aboutDiv2">
+            <div class="personal" data-aos="fade-right" data-aos-duration="1000">
+                <div class="aboutTitle">
+                    <p class="personalLbl">Personal Details</p> 
+                </div>
+                 <div class="txtHolder">
+                    <p class="placeholder">
+                        Name<br>
+                        Age<br>
+                        Address<br>
+                        College<br>
+                        Degree<br>
+                        Experience
+                    </p>
+                    <p class="info">
+                        Edison A. Modesto Jr.<br>
+                        18<br>
+                        Sampaloc, Manila<br>
+                        Pamantasan ng Lungsod ng Maynila<br>
+                        BS in Computer Science<br>
+                        3 years
+                    </p>
+                </div>
+                
+                
+            </div>
+            <div class="interest" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="aboutTitle">
+                        <p class="personalLbl">Interests</p>
+                    </div>
+                    <div class="hobby-container">
+                        <div class="iRow1">
+                            <img src="img/Coding.png" alt="" srcset="">
+                            <img src="img/Pentesting.png" alt="" srcset="">
+                            <img src="img/Learning.png" alt="" srcset="">
+                        </div>
+                        <div class="iRow2">
+                            <img src="img/Travel.png" alt="">
+                            <img src="img/Design.png" alt="">
+                            <img src="img/Music.png" alt="">
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="btnContainer">
+            <button class="cvBtn">Download CV</button>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="serviceTitle">
+            <p class="serviceTitle">My Services</p>
+        </div>
+        <div class="servicesDiv">
+
+            <div class="softwareDiv"  data-aos="fade-right" data-aos-duration="1000">
+                <img src="img/software.png" alt="">
+                <p class="serviceLbl">Software Development</p>
+                <p class="serviceSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="webDiv" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="img/web.png" alt="">
+                <p class="serviceLbl">Web Development</p>
+                <p class="serviceSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="cyberDiv" data-aos="fade-left" data-aos-duration="1000">
+                <img src="img/cyber.png" alt="" >
+                <p class="serviceLbl">Cybersecurity</p>
+                <p class="serviceSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="works">
+        <div class="worksTitle">
+            <p>My Works</p>
+        </div>
+        <div class="worksDiv">
+            <div class="usb" data-aos="fade-right" data-aos-duration="1000">
+                <img src="img/usb.png" alt="">
+                <p class="workLbl">USB Locker</p>
+                <p class="workSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div data-aos="zoom-out" data-aos-duration="1000">
+                <img src="img/mempass.png" alt="">
+                <p class="workLbl">Mem|Pass</p>
+                <p class="workSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div  data-aos="fade-left" data-aos-duration="1000">
+                <img src="img/progheropng.png" alt="">
+                <p class="workLbl">ProgHeroE</p>
+                <p class="workSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="contTitle">
+            <p>Contact Me</p>
+        </div>
+        <div class="contDiv"  data-aos="slide-up" data-aos-duration="1500">
+            <div class="messengerDiv">
+                <img src="img/messenger 1.png" alt="">
+                <p class="contLbl">Messenger</p>
+                <p class="contSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="emailDiv">
+                <img src="img/gmail2 1.png" alt="">
+                <p class="contLbl">Email</p>
+                <p class="contSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="phoneDiv">
+                <img src="img/phone-call 1.png" alt="">
+                <p class="contLbl">Phone</p>
+                <p class="contSlbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
